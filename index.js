@@ -3,6 +3,7 @@ const fs = require('fs');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
+const {employeeCardHtml} = require('./dist/renderhtml');
 
 const team = [];
 
@@ -129,5 +130,15 @@ function addNewEmployee() {
     })
 }
 
-addManager()
-    .then(addEmployee)
+// addManager()
+//     .then(addEmployee)
+    // .then(() => {
+    // const mCard = managerCardHtml(team[0]);
+    // console.log(mCard);
+    // })    
+
+const testEmployee = new Engineer('Joe', 5445, 'joe@mail.com', 'joehub');
+
+const employeeCard = employeeCardHtml(testEmployee);
+
+console.log(employeeCard);
