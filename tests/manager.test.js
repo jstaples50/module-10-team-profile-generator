@@ -11,7 +11,7 @@ describe('Manager', () => {
 
         it('should throw an error if officeNumber is not a non-negative number', () => {
             const cb = () => new Manager('Laura', 3466, 'laura@gmail.com');
-            const err = new Error("Expected parameter 'officeNumber', to be a non-negative number");
+            const err = new Error("Expected parameter 'officeNumber' to be a non-negative number");
 
             expect(cb).toThrow(err);
         })

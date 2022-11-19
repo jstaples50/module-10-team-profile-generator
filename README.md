@@ -11,6 +11,8 @@ This app takes in user input and generators an html file that renders employee i
 - Using Inquirer to take in user input
 - Using npm package fs *(file system)* to dynamically create files
 
+*Link to Walkthrough video:* [Walkthrough Video](https://drive.google.com/file/d/1SkrArv157E6mUKpqHvJ2gTzePAW-TAH2/view)
+
 ## Table of Contents
 
 - [Installation](#installation)
