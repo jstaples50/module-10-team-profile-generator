@@ -22,7 +22,7 @@ function employeeCardHtml(employee) {
   </div>
   <ul class="list-group list-group-flush p-4">
     <li class="list-group-item">Id: ${employee.getId()}</li>
-    <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}<a></li>
+    <a href="mailto:${employee.getEmail()}" class="list-group-item list-group-item-action">Email: ${employee.getEmail()}</a>
     <li class="list-group-item">${roleParameter}: ${roleValue}</li>
   </ul>
 </div>
